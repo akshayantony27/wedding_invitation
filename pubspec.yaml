@@ -1,0 +1,25 @@
+name: wedding_invitation
+description: Premium animated digital wedding invitation (Flutter Web) for Akshay Antony & Wilma Theresa.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_fonts: ^6.2.1
+  url_launcher: ^6.3.0
+  audioplayers: ^6.1.0
+  visibility_detector: ^0.4.0+2
+
+dev_dependencies:
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/audio/
+    - assets/images/
+    - assets/images/basilica_church.jpg

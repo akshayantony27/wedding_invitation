@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.rotate-x-0 {
+  transform: rotateX(0deg);
+}
+
+.rotate-x-180 {
+  transform: rotateX(180deg);
+}

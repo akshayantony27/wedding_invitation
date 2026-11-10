@@ -1,0 +1,6 @@
+{
+  "name": "Akshay & Wilma Wedding Invitation",
+  "description": "Digital wedding invitation for Akshay Antony & Wilma Theresa at The Basilica of Our Lady of Ransom, Vallarpadam on Sunday, 27 December 2026.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

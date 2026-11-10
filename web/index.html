@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Akshay Antony &amp; Wilma Theresa | Wedding Invitation</title>
+  <meta name="description" content="You are cordially invited to the wedding of Akshay Antony and Wilma Theresa on Sunday, 27 December 2026 at 10:30 AM, The Basilica of Our Lady of Ransom, Vallarpadam, Kochi, Kerala.">
+  <meta name="theme-color" content="#FBE4E1">
+  <meta name="robots" content="index, follow">
+
+  <!-- Social sharing (WhatsApp, Facebook, iMessage, Telegram, X).
+       __SITE_URL__ is replaced with your public URL by the GitHub Actions workflow. -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Akshay Antony &amp; Wilma Theresa | Wedding Invitation">
+  <meta property="og:description" content="Sunday, 27 December 2026, 10:30 AM. The Basilica of Our Lady of Ransom, Vallarpadam, Kochi, Kerala. Tap to open your invitation.">
+  <meta property="og:image" content="__SITE_URL__og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="__SITE_URL__">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Akshay Antony &amp; Wilma Theresa | Wedding Invitation">
+  <meta name="twitter:description" content="Sunday, 27 December 2026, 10:30 AM. Vallarpadam, Kochi, Kerala.">
+  <meta name="twitter:image" content="__SITE_URL__og-image.png">
+
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Wedding Invitation">
+
+  <style>
+    html, body { margin: 0; height: 100%; background: #FBE4E1; overflow-x: hidden; }
+    #splash {
+      position: fixed; inset: 0; z-index: 10;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      background: linear-gradient(#FBE4E1, #FDEADB);
+      color: #1F3D2B; font-family: "Brush Script MT", "Snell Roundhand", cursive;
+      transition: opacity .7s ease;
+    }
+    #splash .mono { font-size: 64px; animation: pulse 2s ease-in-out infinite; }
+    #splash .hint { font-family: Georgia, serif; font-style: italic; font-size: 16px; margin-top: 8px; opacity: .75; }
+    @keyframes pulse { 0%,100% { opacity: .55; transform: scale(.97); } 50% { opacity: 1; transform: scale(1); } }
+  </style>
+</head>
+<body>
+  <div id="splash">
+    <div class="mono">A &amp; W</div>
+    <div class="hint" id="splash-hint">Preparing your invitation&hellip;</div>
+  </div>
+  <noscript>
+    <p style="font-family:Georgia,serif;text-align:center;padding:40px;color:#1F3D2B">
+      Akshay Antony &amp; Wilma Theresa &mdash; Sunday, 27 December 2026, 10:30 AM,
+      The Basilica of Our Lady of Ransom, Vallarpadam, Kochi, Kerala.
+      Please enable JavaScript to view the full invitation.
+    </p>
+  </noscript>
+  <script>
+    window.addEventListener('flutter-first-frame', function () {
+      var s = document.getElementById('splash');
+      if (!s) return;
+      s.style.opacity = '0';
+      setTimeout(function () { s.remove(); }, 750);
+    });
+    setTimeout(function () {
+      var h = document.getElementById('splash-hint');
+      if (h) h.textContent = 'Still loading \u2013 please keep this page open, or refresh if it does not appear.';
+    }, 15000);
+  </script>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
